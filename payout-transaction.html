@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        
+
+        <meta charset="utf-8" />
+                <title>KargoBox</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta content="KargoBox-Logistic Simplified" name="description" />
+                <meta content="" name="author" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+                <!-- App favicon -->
+                <link rel="icon shortcut"  class="bg-danger " sizes="32x32" href="assets/images/favicon.png">
+                <link href="assets/libs/simple-datatables/style.css" rel="stylesheet" type="text/css" />
+                <link href="assets/libs/mobius1-selectr/selectr.min.css" rel="stylesheet" type="text/css" />
+                <link href="assets/libs/huebee/huebee.min.css" rel="stylesheet" type="text/css" />
+                <link href="assets/libs/vanillajs-datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css" />
+                <link href="assets/libs/uppy/uppy.min.css" rel="stylesheet" type="text/css" />
+        <!-- App css -->
+         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body id="body" class="enlarge-menu">
+        <!-- leftbar-tab-menu -->
+        <div  class="leftbar-tab-menu">
+            <div class="main-icon-menu">
+                <a class='logo logo-metrica d-block text-center' href='index.html'>
+                    <span>
+                        <img src="assets/images/Rectangle 193.png" alt="logo-small" class="logo-sm">
+                    </span>
+                </a>
+                <div class="main-icon-menu-body">
+                    <ul class="nav nav-tabs"  >
+                        <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Shipper & Provider" data-bs-trigger="hover">
+                            <a href="shipper-provider.html" id="dashboard-tab" class="nav-link ">
+                                <i class="fas fa-truck fs-5 menu-icon"></i>
+                            </a><!--end nav-link-->
+                        </li><!--end nav-item-->
+                    </ul>
+                    <div class="position-reletive h-100" data-simplebar style="overflow-x: hidden;">
+                        <ul class="nav nav-tabs mt-0" role="tablist" id="tab-menu">
+                           
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Request Management" data-bs-trigger="hover">
+                                <a href="#MetricaAuthentication" id="authentication-tab" class="nav-link">
+                                    <i class="mdi mdi-file-table-outline menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="HR Management" data-bs-trigger="hover">
+                                <a href="#MetricaApps" id="apps-tab" class="nav-link">
+                                    <i class="mdi mdi-shield-account-outline menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+
+                        </ul><!--end nav-->
+                        <ul class="nav nav-tabs mt-0"  >
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Offer Management" data-bs-trigger="hover">
+                                <a href="offer-management.html" id="uikit-tab" class="nav-link">
+                                    <i class="ti ti-report-money menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+    
+                        </ul>
+                        <ul class="nav nav-tabs mt-0" role="tablist" id="tab-menu">
+
+                          
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="User Management" data-bs-trigger="hover">
+                                <a href="#MetricaPages" id="pages-tab" class="nav-link">
+                                    <i class="far fa-user menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+    
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Support System" data-bs-trigger="hover">
+                                <a href="#Metrica-support" id="pages-tab" class="nav-link">
+                                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4c1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10"/></svg>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Reports" data-bs-trigger="hover">
+                                <a href="#MetricaReport" id="uikit-tab" class="nav-link">
+                                    <i class="mdi mdi-file-document-box-multiple-outline menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                            <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings" data-bs-trigger="hover">
+                                <a href="#MetricaSettings" id="settings-tab" class="nav-link">
+                                    <i class="ti ti-settings menu-icon"></i>
+                                </a><!--end nav-link-->
+                            </li><!--end nav-item-->
+                        </ul>
+                    </div><!--end /div-->
+                </div><!--end main-icon-menu-body-->
+                <div class="pro-metrica-end rounded-circle">
+                    <a href="#" class="profile">
+                        <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle thumb-sm">
+                    </a>
+                </div><!--end pro-metrica-end-->
+            </div>
+            <!--end main-icon-menu-->
+
+            <div class="main-menu-inner">
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a class='logo' href='index.html'>
+                        <span>
+                            <img src="assets/images/Kargo-image.png"  alt="logo-large" class="logo-lg logo-dark">
+                            <img src="assets/images/Kargo-image.png"  alt="logo-large" class="logo-lg logo-light">
+                        </span>
+                    </a><!--end logo-->
+                </div><!--end topbar-left-->
+                <!--end logo-->
+                <div class="menu-body navbar-vertical tab-content" data-simplebar>
+                  
+                    <div id="MetricaApps" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="apps-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">HR Management</h6>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="sidebarCollapse">
+                            <!-- Navigation -->
+                            <ul class="navbar-nav">
+                               
+                                <li class="nav-item">
+                                    <a class='nav-link' href='staff.html'>Staff Profile</a>
+                                </li><!--end nav-item-->
+                               
+                            </ul><!--end navbar-nav--->
+                        </div><!--end sidebarCollapse-->
+                    </div><!-- end Crypto -->
+
+
+                    <div id="MetricaPages" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Notifications Management</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='pages-profile.html'>System Notifications </a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='push-notification.html'>Push Notifications </a>
+                            </li><!--end nav-item-->
+                            
+                        </ul><!--end nav-->
+                    </div><!-- end Pages -->
+
+                    <div id="Metrica-support" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Support System</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='general-faq.html'>General FAQ'S</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='pages-tour.html'>Access Support Chat</a>
+                            </li><!--end nav-item-->
+                            
+                            <li class="nav-item">
+                                <a class='nav-link' href='pages-tour.html'>Access Support Ticket</a>
+                            </li><!--end nav-item-->
+                            
+                        </ul><!--end nav-->
+                    </div><!-- end Pages -->
+                    <div id="MetricaReport" class="main-icon-menu-pane tab-pane" role="tabpanel" aria-labelledby="pages-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Reports</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='payout-transaction.html'>Payout Transaction Report</a>
+                            </li><!--end nav-item-->
+                            <li class="nav-item">
+                                <a class='nav-link' href='booking-reports.html'>Booking Report</a>
+                            </li><!--end nav-item-->
+                            
+                        </ul><!--end nav-->
+                    </div><!-- end Pages -->
+
+                    <div id="MetricaAuthentication" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="authentication-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Request Management</h6>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class='nav-link' href='bussiness-account-requests.html'>Business Account Requests </a>
+                            </li><!--end nav-item-->
+                           
+                            <li class="nav-item">
+                                <a class='nav-link' href='provider-verification.html'>Provider Verification</a>
+                            </li><!--end nav-item-->
+                            
+                            <li class="nav-item">
+                                <a class='nav-link' href='kyc-verification.html'>KYC Verification</a>
+                            </li><!--end nav-item-->
+                            
+                            <li class="nav-item">
+                                <a class='nav-link' href='amount-withdrawal.html'>Amount Withdrawal</a>
+                            </li><!--end nav-item-->
+                            
+                            
+                        </ul><!--end nav-->
+                    </div><!-- end Authentication-->
+                    <div id="MetricaSettings" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                        aria-labelledby="settings-tab">
+                        <div class="title-box">
+                            <h6 class="menu-title">Settings</h6>
+                        </div>
+                        <div class="collapse navbar-collapse" id="sidebarCollapse">
+
+                            <ul class="navbar-nav">
+                              
+                            
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sidebarAnalytics" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="sidebarAnalytics">
+                                        Service Setting
+                                    </a>
+                                    <div class="collapse " id="sidebarAnalytics">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class='nav-link ' href='miscellaneous-settings.html'>Miscellaneous Settings</a>
+    
+                                            </li><!--end nav-item-->
+                                            <br>
+                                            <li class="nav-item">
+                                                <a class='nav-link ' href='service-charge.html'>Service Charge Settings</a>
+    
+                                            </li><!--end nav-item-->
+                                            <br>
+                                        </ul><!--end nav-->
+                                    </div><!--end sidebarAnalytics-->
+                                </li><!--end nav-item-->
+    
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sidebarCrypto" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="sidebarCrypto">
+                                        Payment Gateway Settings
+                                    </a>
+                                    <div class="collapse " id="sidebarCrypto">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class='nav-link ' href='payment-mode-setting.html'>Payment Mode Setting</a>
+                                            </li><!--end nav-item-->
+                                            <br>
+                                            <li class="nav-item">
+                                                <a class='nav-link ' href='payment-configuration.html'>Payment Configuration</a>
+                                            </li><!--end nav-item-->
+                                            <br>
+                                        </ul><!--end nav-->
+                                    </div><!--end sidebarCrypto-->
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sidebarnew" data-bs-toggle="collapse" role="button"
+                                        aria-expanded="false" aria-controls="sidebarnew">
+                                       App Settings
+                                    </a>
+                                    <div class="collapse " id="sidebarnew">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class='nav-link ' href='help-desk.html'>HelpDesk Setting</a>
+                                            </li><!--end nav-item-->
+                                            
+                                        </ul><!--end nav-->
+                                    </div><!--end sidebarCrypto-->
+                                </li><!--end nav-item-->
+                                
+                            </ul><!--end nav-->
+                        </div>
+                    </div><!-- end Authentication-->
+                </div>
+                <!--end menu-body-->
+            </div><!-- end main-menu-inner-->
+        </div>
+        <!-- end leftbar-tab-menu-->
+        <!-- Top Bar Start -->
+        <div class="topbar">            
+            <!-- Navbar -->
+            <nav class="navbar-custom" id="navbar-custom">    
+                <ul class="list-unstyled topbar-nav float-end mb-0">
+                    <li >
+                        <a id="fullscreen-btn" class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
+   aria-haspopup="false" aria-expanded="false">
+   <i class="fas fs-5 fa-expand"></i>
+   <!-- <span class="alert-badge"></span> -->
+</a>
+                       
+                    </li>
+
+                    <li class="dropdown notification-list">
+                        <a class="nav-link dropdown-toggle arrow-none nav-icon" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <i class="ti ti-bell"></i>
+                            <span class="alert-badge"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-lg pt-0">
+                
+                            <h6 class="dropdown-item-text font-15 m-0 py-3 border-bottom d-flex justify-content-between align-items-center">
+                                Notifications <span class="badge bg-soft-primary badge-pill">2</span>
+                            </h6> 
+                            <div class="notification-menu" data-simplebar>
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 min ago</small>
+                                    <div class="media">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-chart-arcs"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing and industry.</small>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                </a><!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">10 min ago</small>
+                                    <div class="media">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-device-computer-camera"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Meeting with designers</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                </a><!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">40 min ago</small>
+                                    <div class="media">
+                                        <div class="avatar-md bg-soft-primary">                                                    
+                                            <i class="ti ti-diamond"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">UX 3 Task complete.</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                </a><!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">1 hr ago</small>
+                                    <div class="media">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-drone"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Your order is placed</h6>
+                                            <small class="text-muted mb-0">It is a long established fact that a reader.</small>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                </a><!--end-item-->
+                                <!-- item-->
+                                <a href="#" class="dropdown-item py-3">
+                                    <small class="float-end text-muted ps-2">2 hrs ago</small>
+                                    <div class="media">
+                                        <div class="avatar-md bg-soft-primary">
+                                            <i class="ti ti-users"></i>
+                                        </div>
+                                        <div class="media-body align-self-center ms-2 text-truncate">
+                                            <h6 class="my-0 fw-normal text-dark">Payment Successfull</h6>
+                                            <small class="text-muted mb-0">Dummy text of the printing.</small>
+                                        </div><!--end media-body-->
+                                    </div><!--end media-->
+                                </a><!--end-item-->
+                            </div>
+                            <!-- All-->
+                            <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                                View all <i class="fi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </li>
+                   
+
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle nav-user" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="false" aria-expanded="false">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle me-2 thumb-sm" />
+                                <div>
+                                    <small class="d-none d-md-block font-11">Admin</small>
+                                    <span class="d-none d-md-block fw-semibold font-12">Maria Gibson <i
+                                            class="mdi mdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="admin-profile.html"><i class="ti ti-user font-16 me-1 align-text-bottom"></i> Profile</a>
+                            <a class="dropdown-item" href="change-password.html"><i class="ti ti-settings font-16 me-1 align-text-bottom"></i> Change Password</a>
+                            <div class="dropdown-divider mb-0"></div>
+                            <a class="dropdown-item" href="#"><i class="ti ti-power font-16 me-1 align-text-bottom"></i> Logout</a>
+                        </div>
+                    </li><!--end topbar-profile-->
+                      
+                </ul><!--end topbar-nav-->
+
+                <ul class="list-unstyled topbar-nav mb-0">                        
+                    <li>
+                        <button class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+                            <i class="ti ti-menu-2"></i>
+                        </button>
+                    </li> 
+                    <li>
+                        <a href="index.html" class="nav-link button-menu-mobile nav-icon" id="togglemenu">
+                            <i class="ti ti-home"></i>
+                        </a>
+                    </li> 
+                    <li>
+                        <button type="button" class="btn-theme btn "> Bookings Dashboard</button>
+                    </li> 
+                    <li class="hide-phone app-search">
+                        <form role="search" action="#" method="get">
+                            <input type="search" name="search" class="form-control top-search mb-0" placeholder="Type text...">
+                            <button type="submit"><i class="ti ti-search"></i></button>
+                        </form>
+                    </li>                       
+                </ul>
+            </nav>
+            <!-- end navbar-->
+        </div>
+        <!-- Top Bar End -->
+        <!-- Top Bar End -->
+
+        <div class="page-wrapper">
+
+            <!-- Page Content-->
+            <div class="page-content-tab">
+
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <h4 class="page-title">Provider Payout Transaction Report</h4>
+                                    <p>Detailed view of payouts transferred to providers</p>
+                                </li>
+                            </ul>
+                        </div><!--end col-->
+
+                        <div class="col-md-7 text-end d-flex align-items-center justify-content-start justify-content-md-end">
+                            <div class="">
+                                <ul class="list-inline d-flex">
+                                    <li class="list-inline-item">
+                                        <div class="input-group">                                                
+                                            <input type="text" id="chat-search" name="chat-search" class="form-control" placeholder="Search">
+                                           <button type="button" class="btn btn-theme shadow-none"><i class="la la-search"></i></button>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="list-inline-item  ">
+                                        <a type="button" class="btn  btn-theme " data-bs-toggle="collapse" href="#collapseFilter" aria-expanded="true" aria-controls="collapseFilter"><i class="mdi mdi-filter-outline"></i>Filter</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>                            
+                        </div><!--end col-->
+                    </div>
+                    
+                    <div  class="row collapse show" id="collapseFilter">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Filter Payout Transaction Record</h4>
+                                </div><!--end card-header-->
+                                <div class="card-body">    
+                                    <form class="">
+                                        <div class="row row-cols-4">
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Payout Start Date <span class="text-danger">*</span></label>
+                                                    <input type="date" required  placeholder="Enter Charge Value" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Payout End Date <span class="text-danger">*</span></label>
+                                                    <input type="date" required  placeholder="Enter Distance" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Provider <span class="text-danger">*</span></label>
+                                                    <select id="default" required name="status" class="form-select">
+                                                        <option value="default" >Select</option>
+                                                        <option value="1">Provider1</option>
+                                                        <option value="2">Provider2</option>
+                                                       
+                                                    </select>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Provider Type <span class="text-danger">*</span> </label>
+                                                    <select required  class="form-select">
+                                                        <option value="default">Select</option>
+                                                        <option value="1">General</option>
+                                                        <option value="2">Business</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                           
+                                            <div class="col d-flex gap-2 align-items-end">
+                                                
+                                                <div class="mb-3">
+
+                                                    <a href="#" type="submit" class="btn px-1 px-xl-5 px-xs-3 px-sm-4 btn-theme">Apply</a>
+                                                </div>
+                                                
+                                                <div class="mb-3">
+
+                                                    <a href="#" type="button" class="btn px-xl-5 px-xs-3 px-sm-4 px-1 btn-dark">Reset</a>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label class="mb-2">Total Payment Amount (₹) <span class="text-danger">*</span></label>
+                                                    <input type="text" required disabled  placeholder="Enter Distance" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                    </form>
+                                </div><!--end card-body-->
+                            </div><!--end card-->
+                        </div>
+                    </div>  
+                      
+                
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Provider Payout Transaction Record Record</h3>
+                                    <!-- <p >Detailed report of Vehicle Type Management.</p> -->
+                                </div><!--end card-header-->
+                                
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table" id="datatable_custom">
+                                            <thead class="thead bg-soft-secondary">
+                                              <tr>
+                                                <th >#</th>
+                                                <th>Provider</th>
+                                                <th>Provider Type</th>
+                                                <th>Withdrawal ID</th>
+                                                <th>Amount</th>
+                                                <th>Payment Date</th>
+                                                <th>Transaction ID</th>
+                                                
+                                                <th>Status</th>
+                                                
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td></td>
+                                                    <td>General</td>
+                                                    <td>12345</td>
+                                                    <td>1234567</td>
+                                                    <td>12-02-24</td>
+                                                    <td>2222</td>
+                                                   
+                                                    <td><span class="badge fs-6 badge-soft-success">Enable</span></td>
+                                                   
+                                                </tr>
+                                                                                                                   
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+                    <div class="modal fade " id="update-offer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <form class="">
+                          <div class="modal-content ">
+                            <div class="modal-header bg-light">
+                              <h1 class="modal-title text-dark fs-5" id="staticBackdropLabel">Update Offers and Discounts</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- <p>Update the Data of All Payouts </p> -->
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Offer Name <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Offer Name" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Coupon Code <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Coupon Code" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Discount Type <span class="text-danger">*</span></label>
+                                            <select id="default" required name="status" class="form-select">
+                                                <option value="default" >Select</option>
+                                                <option value="1">Fixed</option>
+                                                <option value="2">Percentage</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">User Type <span class="text-danger">*</span> </label>
+                                            <select required  class="form-select">
+                                                <option value="1">General Shipper</option>
+                                                <option value="2">Business Shipper</option>
+                                                <option value="3">Both</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Applicability <span class="text-danger">*</span></label>
+                                            <select id="default" required name="status" class="form-select">
+                                                <option value="default" >Select</option>
+                                                <option value="1">Service Charge</option>
+                                                <option value="2">Total Charge</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Value <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Value" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Start Date <span class="text-danger">*</span></label>
+                                            <input type="date" required  class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">End Date <span class="text-danger">*</span></label>
+                                            <input type="date" required  class="form-control" id="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Status <span class="text-danger">*</span> </label>
+                                            <select required  class="form-select">
+                                                <option value="1">Enabled</option>
+                                                <option value="2">Disabled</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                   
+                                </div>
+                              
+                            </div>
+                  
+                            <div class="modal-footer ">
+                              <button type="button" class="btn  btn-md btn-de-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="submit" class="btn  btn-md btn-theme">Update Offer</button>
+                            </div>
+                          </div>
+                        </form>
+                        </div>
+                      </div>
+                    <div class="modal fade " id="add-offer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <form class="">
+                          <div class="modal-content ">
+                            <div class="modal-header bg-light">
+                              <h1 class="modal-title text-dark fs-5" id="staticBackdropLabel">Add Offers and Discounts</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- <p>Update the Data of All Payouts </p> -->
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Offer Name <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Offer Name" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Coupon Code <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Coupon Code" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Discount Type <span class="text-danger">*</span></label>
+                                            <select id="default" required name="status" class="form-select">
+                                                <option value="default" >Select</option>
+                                                <option value="1">Fixed</option>
+                                                <option value="2">Percentage</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">User Type <span class="text-danger">*</span> </label>
+                                            <select required  class="form-select">
+                                                <option value="1">General Shipper</option>
+                                                <option value="2">Business Shipper</option>
+                                                <option value="3">Both</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Applicability <span class="text-danger">*</span></label>
+                                            <select id="default" required name="status" class="form-select">
+                                                <option value="default" >Select</option>
+                                                <option value="1">Service Charge</option>
+                                                <option value="2">Total Charge</option>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                     
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Value <span class="text-danger">*</span></label>
+                                            <input type="text" required placeholder="Enter Value" class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">Start Date <span class="text-danger">*</span></label>
+                                            <input type="date" required  class="form-control" id="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3 ">
+                                            <label class="mb-2">End Date <span class="text-danger">*</span></label>
+                                            <input type="date" required  class="form-control" id="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-lg-4">
+                                        <div class="mb-3">
+                                            <label class="mb-2">Status <span class="text-danger">*</span> </label>
+                                            <select required  class="form-select">
+                                                <option value="1">Enabled</option>
+                                                <option value="2">Disabled</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                   
+                                </div>
+                              
+                            </div>
+                  
+                            <div class="modal-footer ">
+                              <button type="button" class="btn  btn-md btn-de-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="submit" class="btn  btn-md btn-theme">Add Offer</button>
+                            </div>
+                          </div>
+                        </form>
+                        </div>
+                      </div>
+
+                </div><!-- container -->
+
+               
+                <!--Start Footer-->
+                <!-- Footer Start -->
+                <footer class="footer text-center text-sm-start">
+                     Copyright &copy; 2024 KargoBox. All Rights Reserved. <span class="text-muted d-none d-sm-inline-block float-end">Design & Developed by <span class="text-danger"> ForAll A Tech</span></span>
+                </footer>
+                <!-- end Footer -->                
+                <!--end footer-->
+            </div>
+            <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+
+        <!-- Javascript  -->  
+        <!-- vendor js -->
+        
+        
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/libs/uppy/uppy.legacy.min.js"></script>
+        <script src="assets/js/pages/file-upload.init.js"></script>
+        <script src="assets/libs/mobius1-selectr/selectr.min.js"></script>
+        <script src="assets/libs/simple-datatables/umd/simple-datatables.js"></script>
+        <script src="assets/js/pages/datatable.init.js"></script>
+        <script src="assets/js/pages/forms-advanced.js"></script>
+        <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+        <script src="assets/js/pages/analytics-index.init.js"></script>
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+    <!--end body-->
+</html>
